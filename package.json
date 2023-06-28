@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "node app.js",
-    "build": "mkdir -p dist && cp -R node_modules dist && cp index.js dist/index.js"
+    "build": "mkdir -p dist && cp -R node_modules dist && cp app.js dist/app.js"
   },
   "repository": {
     "type": "git",
