@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "samplepipeline",
+  "description": "Test mise en place de GitHub actions",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baptif/SamplePipeLine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baptif/SamplePipeLine/issues"
+  },
+  "homepage": "https://github.com/Baptif/SamplePipeLine#readme"
+}
