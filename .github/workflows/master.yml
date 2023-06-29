@@ -36,7 +36,7 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         
     - name: Zip artifact for deployment
-      run: zip -r release.zip ./^
+      run: zip -r release.zip .
         
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
