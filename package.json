@@ -7,7 +7,7 @@
   "name": "samplepipeline",
   "description": "Test mise en place de GitHub actions",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "lint": "eslint .",
