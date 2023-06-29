@@ -48,7 +48,7 @@ jobs:
       with:
         name: app-artifact
         path: |
-          ./nodes_modules
+          ./node_modules
           ./app.js
           ./server.js
           ./package.json
