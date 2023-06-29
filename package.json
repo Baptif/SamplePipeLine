@@ -1,15 +1,18 @@
 {
   "dependencies": {
-    "express": "^4.18.2"
+    "eslint": "^8.43.0",
+    "express": "^4.18.2",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.8",
+    "supertest": "^6.3.3"
   },
   "name": "samplepipeline",
   "description": "Test mise en place de GitHub actions",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "start": "node app.js",
-    "build": "mkdir -p dist && cp -R node_modules dist && cp app.js dist/app.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
