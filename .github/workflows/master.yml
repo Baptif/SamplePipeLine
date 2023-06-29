@@ -24,19 +24,23 @@ jobs:
     - name: Test application
       run: npm test
       
-    - name: Run linters
-      uses: wearerequired/lint-action@v2
-      with:
-        eslint: true
-        prettier: true
+    - name: Run linter
+      run: npx eslint .
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
     - name: Create artifact
-      run: mkdir -p dist && cp -R node_modules dist && cp index.js dist && cp package.json dist
+      run: |
+        mkdir -p dist
+        cp -R node_modules dist
+        cp index.js dist
+        cp package.json dist
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
