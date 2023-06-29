@@ -43,11 +43,8 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Create artifact
-      run: zip -r app.zip .
-
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: app-artifact
-        path: app.zip
+        path: nodes_modules && app.js && server.js && package.json
