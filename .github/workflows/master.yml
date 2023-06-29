@@ -47,4 +47,8 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: app-artifact
-        path: nodes_modules && app.js && server.js && package.json
+        path: |
+          ./nodes_modules
+          ./app.js
+          ./server.js
+          ./package.json
